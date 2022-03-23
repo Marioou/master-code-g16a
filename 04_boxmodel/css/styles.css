@@ -1,0 +1,39 @@
+body{
+    background-image: url("../img/r.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    height: 300px;
+    margin: 0px;
+    padding: 0px;
+}
+.principal, header{
+    background-color: aqua;
+    width: 100%;
+}
+#pie_pagina{
+    margin: auto;
+    background-color: cadetblue;
+    width: 20%;
+    height: 100px;
+}
+.principal{
+    background-color: cornflowerblue;
+}
+.principal, #pie_pagina, header{
+    margin: 10px;
+    border: 1px black solid;
+    padding: 20px 5px 10px 15px;
+}
+h1, p{
+    margin: 50px;
+    padding: 10px;
+    text-align: center;
+}
+p{
+    text-align: justify;
+}
+#pie_pagina{
+    margin: auto
+}
+/* Etiquetas basicas CSS */
+/* Podemos verlos como cajas */
