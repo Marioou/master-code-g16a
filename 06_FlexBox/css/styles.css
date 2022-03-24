@@ -1,0 +1,38 @@
+body{
+    font-family: 'Red Hat Mono', monospace;
+    font-size: 18px; 
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    background-color: #ffcdd2 ;
+    height: 20vh;
+    width: 100%;
+    display: flex;
+
+}
+
+aside{
+    background-color: #f48fb1 ;
+    height: 80vh;
+    width: 20%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main{
+    background-color: #d1c4e9;
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer{
+    background-color: #ffcdd2;
+    height: 20vh;
+    display: flex;
+}
+aside, main{
+}
