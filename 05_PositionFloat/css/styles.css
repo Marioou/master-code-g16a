@@ -1,0 +1,59 @@
+body{
+    font-family: 'Red Hat Mono', monospace;  
+    font-size: 18px;
+    margin: 0px;
+    padding: 0px;
+}
+header, footer{
+    background-color: #9575cd ;
+    height: 10vh;
+    width: 100%;
+}
+aside{
+    background-color: #d1c4e9;
+    float: left;
+    height: 80vh;
+    width: 15%;
+}
+main{
+    background-color: #ede7f6;
+    float: left;
+    height: 80vh;
+    width: 83%;
+}
+footer{
+    position: fixed;
+    bottom: 0%;
+}
+h1{
+    color: black;
+    margin: 0px;
+    font-size: 1.5rem;
+    margin: 0 0 0 10px;
+}
+aside a{
+    text-align: center;
+    border: 1px black solid;
+    display: block;
+    margin: 5px 5px 0 5px;
+    text-decoration: none;
+    color: black;
+}
+aside a:hover{
+    background-color: #90caf9;
+    border-radius: 5px;
+}
+p{
+    text-align: center;
+    display: inline-block;
+    margin: 0px;
+    font-size: 1.2rem;
+}
+footer i{
+    text-align: center;
+    font-size: 0.9rem !important;
+}
+footer i:hover{
+    color: black;
+}
+
