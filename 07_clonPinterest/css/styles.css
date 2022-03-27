@@ -1,0 +1,53 @@
+body{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+    padding: 0%;
+    margin: 0%;
+}
+
+.encabezado{
+    background-color: #80cbc4;
+    height: 10vh;
+    margin: 0%;
+    padding: 0%;
+    width: 99.7%
+}
+.encabezado div{
+    display: flex;
+    flex-direction: row;
+}
+
+.barra1{
+    background-color: #b2dfdb;
+    height: 80vh;
+    width: 20%;
+    padding: 0%;
+    margin: 0%;
+}
+.contenido, .barra1, .barra2{
+    display: inline-block;
+}
+.contenido{
+    background-color: #e0f2f1;
+    height: 80vh;
+    width: 59%;
+    padding: 0%;
+    margin: 0%;
+}
+.barra2{
+    background-color: #b2dfdb;
+    height: 80vh;
+    width: 20%;
+    padding: 0%;
+    margin: 0%;
+}
+.piePagina{
+    background-color: #80cbc4;
+    height: 10vh;
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+}
+.encabezado .logo{
+    height: 100%;
+}

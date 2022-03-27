@@ -6,31 +6,70 @@ body{
 }
 
 header{
-    background-color: #ffcdd2 ;
-    height: 20vh;
-    width: 100%;
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #7986cb;
+    height: 10vh;
+    width: 100%;
+}
 
+header div{
+    display: flex;
+    flex-direction: row;
+}
+
+header nav{
+    align-items: center ;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+h1{
+    font-size: 1.5rem;
+    margin: 0 0 0 10px;
 }
 
 aside{
-    background-color: #f48fb1 ;
+    background-color: #c5cae9;
     height: 80vh;
-    width: 20%;
+    width: 15%;
+}
+
+aside nav{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+aside nav a{
+    font-size: 0.8rem;
+    text-align: center;
 }
 
 main{
-    background-color: #d1c4e9;
-    width: 80%;
-    height: 80vh;
+    background-color: #e8eaf6;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
+    height: 80vh;
+    width: 100%;
+}
+
+section{
+    height: 80vh;
+    width: 85%;
 }
 
 footer{
-    background-color: #ffcdd2;
-    height: 20vh;
-    display: flex;
+    background-color: #7986cb;
+    height: 10vh;
+    width: 100%;
+}
+
+.logo{
+    height: 100%;
+}
+
+.user{
+    height: 100%;
 }
