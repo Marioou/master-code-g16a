@@ -39,3 +39,157 @@ a{
     margin: 18vh;
     width: 100%;
 }
+
+h1{
+    font-size: 50px;
+    margin: 0px;
+    color: white;
+}
+
+.contenedor-titulo{
+    text-align: center;
+}
+
+.logo{
+    color: white;
+}
+
+nav ul li a{
+    color: white;
+}
+
+/* Inicio */
+
+h2{
+    text-align: center;
+    font-size: 50px;
+}
+
+#inicio{
+    width: 45%;
+}
+
+#inicio .contenedor-inicio{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Productos */
+
+#productos{
+    background-color: #cdcdcd;
+}
+
+#productos .contenedor-productos{
+    display: flex;
+    justify-content: space-around;
+}
+
+#productos .muestra{
+    width: 30%;
+    box-shadow: 2px 2px 14px #ccc;
+}
+
+#productos img{
+    width: 100%;
+}
+
+#producto .contenido{
+    background-color: white;
+    padding: 20px;
+}
+
+#productos h4{
+    font-size: 24px;
+    margin: 0%;
+    margin-bottom: 15px;
+}
+
+#productos p{
+    color: black;
+    line-height: 24px;
+
+    font-size: 15px;
+}
+
+/* footer */
+
+footer{
+    background: #2f2f2f;
+    padding: 40px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer .contenedor{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer p{
+    color: #fff;
+    padding: 20px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#inicio #productos{
+    padding: 50px 0;
+}
+
+.menu-icon{
+    display: none;
+}
+
+/* inicia media */
+
+@media (max-width:700px){
+    .menu-icon{
+        display: block;
+        float: right;
+        width: 40px;
+        height: 35px;
+    }
+
+    header nav{
+        position: absolute;
+        top: 83px;
+        left: 0%;
+        height: 260px;
+        width: 100%;
+        background-color: #5cb8ff;
+        display: none;
+    }
+
+    header nav ul{
+        flex-direction: column;
+    }
+    header nav ul li{
+        margin-bottom: 15px;
+    }
+
+    h1{
+        font-size: 45px;
+    }
+
+    h2{
+        font: 20px;
+    }
+
+    #inicio .contenedor-inicio{
+        flex-direction: column;
+    }
+
+    #inicio img{
+        width: 100%;
+    }
+    
+    h3{
+        font-size: 40px;
+    }
+    
+}
+
