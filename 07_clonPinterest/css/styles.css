@@ -6,6 +6,8 @@ body{
 }
 
 .encabezado{
+    display: flex;
+    flex-direction: row;
     background-color: #80cbc4;
     height: 10vh;
     margin: 0%;
@@ -16,7 +18,9 @@ body{
     display: flex;
     flex-direction: row;
 }
-
+.titulo{
+    margin: 0 0 0 10px;
+}
 .barra1{
     background-color: #b2dfdb;
     height: 80vh;
@@ -25,7 +29,8 @@ body{
     margin: 0%;
 }
 .contenido, .barra1, .barra2{
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
 }
 .contenido{
     background-color: #e0f2f1;
@@ -48,6 +53,6 @@ body{
     padding: 0%;
     margin: 0%;
 }
-.encabezado .logo{
+.logo{
     height: 100%;
 }
