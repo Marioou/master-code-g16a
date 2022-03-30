@@ -1,5 +1,5 @@
 body{
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 18px;
     padding: 0%;
     margin: 0%;
@@ -8,7 +8,7 @@ body{
 .encabezado{
     display: flex;
     flex-direction: row;
-    background-color: #80cbc4;
+    background-color: white;
     height: 10vh;
     margin: 0%;
     padding: 0%;
@@ -18,41 +18,69 @@ body{
     display: flex;
     flex-direction: row;
 }
+
+.logo{
+    height: 100%;
+}
+
 .titulo{
-    margin: 0 0 0 10px;
+    margin: 25px 20px;
+    text-decoration: none;
+    color: black
+    ;
 }
-.barra1{
-    background-color: #b2dfdb;
-    height: 80vh;
-    width: 20%;
-    padding: 0%;
-    margin: 0%;
-}
-.contenido, .barra1, .barra2{
+
+.barra{
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
 }
+
+.barra-icono{
+    margin: 15px;
+}
+
+.barra-input{
+    background-color: #e0e0e0;
+    margin-top: 15px;
+    width: 1000px;
+    height: 45px;
+    border-top-left-radius: 22px;
+    border-top-right-radius: 22px;
+    border-bottom-left-radius: 22px;
+    border-bottom-right-radius: 22px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.1rem;
+    padding: 0px 46px 0px 15px;
+    border: none;
+}
+
+.barra-input:focus{
+    outline: none;
+    background-color: #ffcdd2 ;
+}
+
+.boton1{
+    background: transparent;
+    border: none;
+}
+
+.search{
+    float: right;
+    margin: 7px;
+}
+
+.actualizaciones{
+    margin: 25px 20px;
+
+}
+
 .contenido{
-    background-color: #e0f2f1;
-    height: 80vh;
-    width: 59%;
-    padding: 0%;
-    margin: 0%;
-}
-.barra2{
-    background-color: #b2dfdb;
-    height: 80vh;
-    width: 20%;
-    padding: 0%;
-    margin: 0%;
-}
-.piePagina{
-    background-color: #80cbc4;
-    height: 10vh;
+    background-color: red;
+    height: 100vh;
     width: 100%;
     padding: 0%;
     margin: 0%;
 }
-.logo{
-    height: 100%;
-}
+
+/* AGREGAR MAS MARGIN A LA DERECHA DE .ACTUALIZACIONES */
