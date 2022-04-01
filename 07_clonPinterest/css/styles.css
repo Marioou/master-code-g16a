@@ -5,14 +5,15 @@ body{
     margin: 0%;
 }
 
+/* COMIENZA HEADER */
+
 .encabezado{
     display: flex;
     flex-direction: row;
+    position: fixed;
     background-color: white;
     height: 10vh;
-    margin: 0%;
-    padding: 0%;
-    width: 99.7%
+    width: 100%;
 }
 .encabezado div{
     display: flex;
@@ -20,7 +21,20 @@ body{
 }
 
 .logo{
-    height: 100%;
+    border: transparent;
+    border-radius: 30px;
+    background: transparent;
+    margin-top: 12px;
+    margin-left: 20px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+}
+
+.logo:hover{
+    background-color: #e0e0e0;
 }
 
 .titulo{
@@ -30,19 +44,17 @@ body{
 }
 
 .boton-inicio{
-    background: transparent;
+    font-weight: bold;
+    background-color: white;
     outline: none;
     border: none;
     font-size: 1.2rem;
     font-family: 'Nunito', sans-serif;
-}
-
-.boton-hoy{
-    background: transparent;
-    outline: none;
-    border: none;
-    font-size: 1.2rem;
-    font-family: 'Nunito', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    width: 80px;
 }
 
 .boton-inicio:hover{
@@ -53,6 +65,28 @@ body{
     border-bottom-right-radius: 22px;
     height: 45px;
     margin-top: 15px;
+    width: 80px;
+}
+
+.boton-inicio:focus{
+    color: white;
+    background-color: black;
+    border-top-left-radius: 22px;
+    border-top-right-radius: 22px;
+    border-bottom-left-radius: 22px;
+    border-bottom-right-radius: 22px;
+    height: 45px;
+    margin-top: 15px;
+    width: 80px;
+}
+
+.boton-hoy{
+    font-weight: bold;
+    background: transparent;
+    outline: none;
+    border: none;
+    font-size: 1.2rem;
+    font-family: 'Nunito', sans-serif;
 }
 
 .boton-hoy:hover{
@@ -101,54 +135,54 @@ body{
 }
 
 .iconos{
+    display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    gap: 10px;
 }
 
-.act{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+a{
     text-decoration: none;
-    color: #9e9e9e;
-    margin-top: 0;
-    padding-right: 30px;
 }
 
-.boton-act{
-    background-color: transparent;
-    border: none;
-}
-
-i:hover{
+#act{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #e0e0e0;
-    border-top-left-radius: 22px;
-    border-top-right-radius: 22px;
-    border-bottom-left-radius: 22px;
-    border-bottom-right-radius: 22px;
-    height: 40px;
+    color: #9e9e9e;
     width: 40px;
 }
 
-.msg{
-    text-decoration: none;
+#msg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #9e9e9e;
-    padding-right: 30px;
+    width: 40px;
 }
 
-.user{
-    text-decoration: none;
+#user{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #9e9e9e;
-    padding-right: 30px;
+    width: 40px;
 }
 
-.exp{
-    text-decoration: none;
+#exp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #9e9e9e;
-    padding-right: 30px;
+    width: 40px;
+}
+
+i:hover{
+    background-color: #e0e0e0;
+    height: 45px;
+    width: 40px;
+    border-radius: 22px;
 }
 
 .boton1{
@@ -156,17 +190,143 @@ i:hover{
     border: none;
 }
 
-.actualizaciones{
-    margin: 25px 20px;
+/* TERMINA HEADER */
 
+/* COMIENZA MAIN */
+
+#divisor{
+    height: 10vh;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .contenido{
+    display: flex;
+    flex-direction: column;
     background-color: white;
-    height: 90vh;
+    height: 100%;
     width: 100%;
     padding: 0%;
-    margin: 0%;
 }
 
-/* AGREGAR MAS MARGIN A LA DERECHA DE .ACTUALIZACIONES */
+.parent {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
+    overflow: scroll;
+    }
+
+
+.div1 img{ 
+    border-radius: 15px;
+    height: auto;
+    width: 100%;
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.div2 img{
+    border-radius: 15px;
+    height: auto;
+    width: 100%;
+    grid-area: 1 / 2 / 2 / 3;
+}
+.div3 img{ 
+    border-radius: 15px;
+    height: auto;
+    width: 100%;
+    grid-area: 1 / 3 / 2 / 4;
+}
+.div4 img{ 
+    border-radius: 15px;
+    height: auto;
+    width: 100%;
+    grid-area: 1 / 4 / 2 / 5; 
+}
+.div5 img{
+    border-radius: 15px; 
+    height: auto;
+    width: 100%;
+    grid-area: 1 / 5 / 2 / 6; 
+}
+.div6 img{ 
+    border-radius: 15px;
+    height: auto;
+    width: 100%;
+    grid-area: 1 / 6 / 2 / 7; 
+}
+.div7 img{ 
+    border-radius: 15px;
+    height: auto;
+    width: 100%;
+    grid-area: 2 / 1 / 3 / 2; 
+}
+.div8 img{ 
+    border-radius: 15px;
+    height: auto;
+    width: 100%;
+    grid-area: 2 / 2 / 3 / 3; 
+}
+.div9 img{ 
+    border-radius: 15px;
+    height: auto;
+    width: 100%;
+    grid-area: 2 / 3 / 3 / 4; 
+}
+.div10 img{ 
+    border-radius: 15px;
+    height: auto;
+    width: 100%;
+    grid-area: 2 / 4 / 3 / 5; 
+}
+.div11 img{ 
+    border-radius: 15px;
+    height: auto;
+    width: 100%;
+    grid-area: 2 / 5 / 3 / 6; 
+}
+.div12 img{ 
+    border-radius: 15px;
+    height: auto;
+    width: 100%;
+    grid-area: 2 / 6 / 3 / 7; 
+}
+.div13 img{
+    border-radius: 15px;
+    height: auto;
+    width: 100%; 
+    grid-area: 3 / 1 / 4 / 2; 
+}
+.div14 img{ 
+    border-radius: 15px;
+    height: auto;
+    width: 100%;
+    grid-area: 3 / 2 / 4 / 3; 
+}
+.div15 img{ 
+    border-radius: 15px;
+    height: auto;
+    width: 100%;
+    grid-area: 3 / 3 / 4 / 4; 
+}
+.div16 img{ 
+    border-radius: 15px;
+    height: auto;
+    width: 100%;
+    grid-area: 3 / 4 / 4 / 5; 
+}
+.div17 img{ 
+    border-radius: 15px;
+    height: auto;
+    width: 100%;
+    grid-area: 3 / 5 / 4 / 6; 
+}
+.div18 img{ 
+    border-radius: 15px;
+    height: auto;
+    width: 100%;
+    grid-area: 3 / 6 / 4 / 7; 
+}
